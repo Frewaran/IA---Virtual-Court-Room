@@ -3,7 +3,52 @@ guid: e68287dfeb1e545f99a93fe7f1813635
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 51-513731_person-standing-silhouette-vector-hd-png-download
+    second: {fileID: 2100000, guid: b59545160027f4ee0bc7ce18e32be117, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CourtRoll_Case_GlassMaterial
+    second: {fileID: 2100000, guid: 1ccb9113699144d3687a092dde6b336a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CourtRoll_Case_Material
+    second: {fileID: 2100000, guid: 3b5f71253be4d4cc48204727c87930ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CourtRoll_DINA4_Material
+    second: {fileID: 2100000, guid: d7c5a20ebb2bc4e68b836eabc0183856, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CourtRoll_LightsOff_Material
+    second: {fileID: 2100000, guid: f6c8b8fc4db8d4acaa34039642523a3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CourtRoll_LightsOn_Material
+    second: {fileID: 2100000, guid: 02e0851f8f2974b808fcfb0319c3ce70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pointer_Material
+    second: {fileID: 2100000, guid: 29eefd466aaa04b68b8482268de5c293, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Typo
+    second: {fileID: 2100000, guid: 642c76d8e522b472c9d66f3f3ff61300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Material
+    second: {fileID: 2100000, guid: 2d3a5a353ea8a420692e14d7468a54a4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
