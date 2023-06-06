@@ -23,13 +23,16 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public float timeBetweenUpdates = 1.5f;
     float nextUpdateTime;
 
+    public GameObject playButton;
+
+
     private void Start() {
         PhotonNetwork.JoinLobby();
     }
 
     public void OnClickCreate() { 
         if (roomInputField.text.Length >= 1) {
-            PhotonNetwork.CreateRoom(roomInputField.text);
+            PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 6, BroadcastPropsChangeToAll = true });
         }
     }
 
@@ -99,5 +102,18 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnPlayerLeftRoom(Player otherPlayer) {
         UpdatePlayerList();
+    }
+
+    private void Update() {
+        if (PhotonNetwork.IsMasterClient) {
+            playButton.SetActive(true);
+        } 
+        else {
+            playButton.SetActive(false);
+        }
+    }
+
+    public void OnClickPlayButton() {
+        PhotonNetwork.LoadLevel("SampleScene");
     }
 }
