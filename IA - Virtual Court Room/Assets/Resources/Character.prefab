@@ -1460,6 +1460,7 @@ GameObject:
   - component: {fileID: 2491379226503347159}
   - component: {fileID: 2491379226503347157}
   - component: {fileID: -1084053883958758841}
+  - component: {fileID: 8409894866671852249}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1712,6 +1713,19 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &8409894866671852249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2491379226503347166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 150fc61bb27f12b4cb59b36653649fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photonView: {fileID: -1084053883958758841}
 --- !u!1001 &2491379226163547048
 PrefabInstance:
   m_ObjectHideFlags: 0
