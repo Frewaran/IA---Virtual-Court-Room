@@ -114,6 +114,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
 
     public void OnClickPlayButton() {
-        PhotonNetwork.LoadLevel("SampleScene");
+        PhotonNetwork.LoadLevel("Multiplayer");
     }
 }
