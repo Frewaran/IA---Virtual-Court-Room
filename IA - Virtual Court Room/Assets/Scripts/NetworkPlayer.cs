@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
-using UnityEngine.XR.Interaction.Toolkit;
 using Photon.Pun;
 using Unity.XR.CoreUtils;
 
@@ -23,9 +22,9 @@ public class NetworkPlayer : MonoBehaviour
     {
         photonView = GetComponent<PhotonView>();
         XROrigin rig = FindObjectOfType<XROrigin>();
-        headRig.transform.Find("Camera Offset/Main Camera");
-        leftHandRig.transform.Find("Camera Offset/LeftHand Controller");
-        rightHandRig.transform.Find("Camera Offset/RightHand Controller");
+        headRig = rig.transform.Find("Camera Offset/Main Camera");
+        leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
+        rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
     }
 
     // Update is called once per frame
