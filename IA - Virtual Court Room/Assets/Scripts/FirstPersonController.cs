@@ -8,6 +8,7 @@ public class FirstPersonController : MonoBehaviour {
     private Camera playerCamera;
     private float verticalRotation = 0.0f;
 
+
     void Start() {
         characterController = GetComponent<CharacterController>();
         playerCamera = GetComponentInChildren<Camera>();
