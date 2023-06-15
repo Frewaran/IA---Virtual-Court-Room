@@ -59,7 +59,6 @@ public class DoorFunctionRoom : MonoBehaviour
     private void openAndCloseLeft()
     {
         doorRotCurr = door.rotation;
-        Debug.Log(doorRotCurr.eulerAngles.y);
 
         if (!doorIsClosed) //Wenn die Tür offen ist (wie zu Beginn)
         {
