@@ -10,7 +10,6 @@ public class NetworkPlayer : MonoBehaviour
     public Transform head;
     public Transform leftHand;
     public Transform rightHand;
-
     public Transform body;
 
     public Animator leftHandAnimator;
@@ -21,6 +20,7 @@ public class NetworkPlayer : MonoBehaviour
     private Transform headRig;
     private Transform leftHandRig;
     private Transform rightHandRig;
+    private Transform bodyRig;
 
 
     // Start is called before the first frame update
@@ -31,6 +31,7 @@ public class NetworkPlayer : MonoBehaviour
         headRig = rig.transform.Find("Camera Offset/Main Camera");
         leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
         rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
+        bodyRig = rig.transform.Find("Character Model");
         if (photonView.IsMine) {
             foreach (var item in GetComponentsInChildren<Renderer>()) {
                 item.enabled = false;
@@ -45,10 +46,12 @@ public class NetworkPlayer : MonoBehaviour
             rightHand.gameObject.SetActive(false);
             leftHand.gameObject.SetActive(false);
             head.gameObject.SetActive(false);
+            body.gameObject.SetActive(false);
 
             MapPosition(head, headRig);
             MapPosition(leftHand, leftHandRig);
             MapPosition(rightHand, rightHandRig);
+            MapPosition(body, bodyRig);
 
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), leftHandAnimator);
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), rightHandAnimator);
