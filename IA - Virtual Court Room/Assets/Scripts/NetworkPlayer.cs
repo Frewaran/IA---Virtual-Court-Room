@@ -11,6 +11,8 @@ public class NetworkPlayer : MonoBehaviour
     public Transform leftHand;
     public Transform rightHand;
 
+    public Transform body;
+
     public Animator leftHandAnimator;
     public Animator rightHandAnimator;
 
