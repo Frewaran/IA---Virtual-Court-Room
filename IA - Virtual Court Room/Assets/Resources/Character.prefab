@@ -209,6 +209,7 @@ MonoBehaviour:
   - {fileID: 187562471407318019}
   - {fileID: 5838061794289576052}
   - {fileID: 7453971658553342253}
+  - {fileID: 7158343796089102905}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -227,7 +228,7 @@ MonoBehaviour:
   head: {fileID: 7693962796222612239}
   leftHand: {fileID: 5332564225312792209}
   rightHand: {fileID: 6238555666871342830}
-  body: {fileID: 8182536600204378104}
+  body: {fileID: 6939454168473501143}
   leftHandAnimator: {fileID: 9500000, guid: a91ff20f7450bf446a6bf0bfb5e932ae, type: 3}
   rightHandAnimator: {fileID: 9500000, guid: 165871bb4fa915847973b6955c7a670d, type: 3}
 --- !u!1 &8118771168133719099
@@ -628,6 +629,12 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!4 &6939454168473501143 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1605929222350202308, guid: 660aea1fcba554cd2be338289433e833,
+    type: 3}
+  m_PrefabInstance: {fileID: 8504076830598043667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8182536600204378104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 660aea1fcba554cd2be338289433e833,
