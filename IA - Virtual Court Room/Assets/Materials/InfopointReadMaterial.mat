@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Teleportation Anchor Material
+  m_Name: InfopointReadMaterial
   m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
   m_ValidKeywords:
   - _SURFACE_TYPE_TRANSPARENT
@@ -124,8 +124,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.51771075, g: 0.9000905, b: 0.99056596, a: 0.24313726}
-    - _Color: {r: 0.5177107, g: 0.9000905, b: 0.99056596, a: 0.24313726}
+    - _BaseColor: {r: 0.17698097, g: 1, b: 0, a: 0.6392157}
+    - _Color: {r: 0.17698094, g: 1, b: 0, a: 0.6392157}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
