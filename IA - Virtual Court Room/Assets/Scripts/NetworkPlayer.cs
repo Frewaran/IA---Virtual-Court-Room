@@ -28,10 +28,11 @@ public class NetworkPlayer : MonoBehaviour
     {
         photonView = GetComponent<PhotonView>();
         XROrigin rig = FindObjectOfType<XROrigin>();
+
         headRig = rig.transform.Find("Camera Offset/Main Camera");
         leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
         rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
-        bodyRig = rig.transform.Find("Character Model/PlayerMesh");
+        bodyRig = rig.transform.Find("Character Model/metarig");
         if (photonView.IsMine) {
             foreach (var item in GetComponentsInChildren<Renderer>()) {
                 item.enabled = false;

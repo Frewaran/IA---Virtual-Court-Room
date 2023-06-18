@@ -22,6 +22,7 @@ public class XRGrabNetworkInteractable : XRGrabInteractable
         
     }
 
+    [System.Obsolete]
     protected override void OnSelectEntered(XRBaseInteractor interactor) {
         photonView.RequestOwnership();
     }
