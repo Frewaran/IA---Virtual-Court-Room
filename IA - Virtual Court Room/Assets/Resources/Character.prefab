@@ -229,8 +229,8 @@ MonoBehaviour:
   leftHand: {fileID: 5332564225312792209}
   rightHand: {fileID: 6238555666871342830}
   body: {fileID: 6939454168473501143}
-  leftHandAnimator: {fileID: 9500000, guid: a91ff20f7450bf446a6bf0bfb5e932ae, type: 3}
-  rightHandAnimator: {fileID: 9500000, guid: 165871bb4fa915847973b6955c7a670d, type: 3}
+  leftHandAnimator: {fileID: 9500000, guid: 1ae9aefe37a62de429ddc2edd1ca36f3, type: 3}
+  rightHandAnimator: {fileID: 9500000, guid: b6c38558987444240b3b3950e4450b77, type: 3}
 --- !u!1 &8118771168133719099
 GameObject:
   m_ObjectHideFlags: 0
