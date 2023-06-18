@@ -31,7 +31,7 @@ public class NetworkPlayer : MonoBehaviour
         headRig = rig.transform.Find("Camera Offset/Main Camera");
         leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
         rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
-        bodyRig = rig.transform.Find("Character Model");
+        bodyRig = rig.transform.Find("Character Model/PlayerMesh");
         if (photonView.IsMine) {
             foreach (var item in GetComponentsInChildren<Renderer>()) {
                 item.enabled = false;
@@ -69,14 +69,14 @@ public class NetworkPlayer : MonoBehaviour
             handAnimator.SetFloat("Trigger", triggerValue);
         }
         else {
-            handAnimator.SetFloat("Trigger", 0);
+            handAnimator.SetFloat("Trigger", 0f);
         }
 
         if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue)) {
             handAnimator.SetFloat("Grip", gripValue);
         }
         else {
-            handAnimator.SetFloat("Grip", gripValue);
+            handAnimator.SetFloat("Grip", 0f);
         }
     }
 }
