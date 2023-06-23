@@ -8,7 +8,7 @@ public class DoorFunction : MonoBehaviour
 {
     private Transform door;
 
-    private XRSimpleInteractable interactable;
+    private XRSimpleNetworkInteractable interactable;
     private bool isDragging = false;
 
     private Quaternion doorRotCurr;
@@ -26,7 +26,7 @@ public class DoorFunction : MonoBehaviour
         door = transform;
         doorOpenRot = door.rotation.eulerAngles.y;
 
-        interactable = GetComponent<XRSimpleInteractable>();
+        interactable = GetComponent<XRSimpleNetworkInteractable>();
         interactable.selectEntered.AddListener(StartDrag);
         interactable.selectExited.AddListener(StopDrag);
     }
