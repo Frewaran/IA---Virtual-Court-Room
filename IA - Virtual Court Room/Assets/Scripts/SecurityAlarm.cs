@@ -17,14 +17,19 @@ public class SecurityAlarm : MonoBehaviourPun
 
     private bool isSelected = false;
 
-    private const byte COLOR_CHANGE_EVENT = 0;
-
     private void Start()
     {
         securityLight.enabled = false;
     }
+
+    
     public void Alarm() 
     {
+        photonView.RPC("SetAlarm", RpcTarget.All);
+    }
+
+    [PunRPC]
+    public void SetAlarm() {
         if (!isSelected) //Wenn der Knopf noch nicht gedrückt wurde
         {
             lamp.GetComponent<Renderer>().material = alarmMaterial;
@@ -36,36 +41,6 @@ public class SecurityAlarm : MonoBehaviourPun
             lamp.GetComponent<Renderer>().material = originMaterial;
             securityLight.enabled = false;
             isSelected = false;
-        }
-
-        PhotonNetwork.RaiseEvent(COLOR_CHANGE_EVENT, isSelected, RaiseEventOptions.Default, SendOptions.SendUnreliable);
-    }
-
-    private void OnEnable() {
-        PhotonNetwork.NetworkingClient.EventReceived += NetworkingClient_EventReceived;
-    }
-
-    private void OnDisable() {
-        PhotonNetwork.NetworkingClient.EventReceived -= NetworkingClient_EventReceived;
-    }
-
-    private void NetworkingClient_EventReceived(EventData obj) {
-        if (obj.Code == COLOR_CHANGE_EVENT) {
-            object data = (object)obj.CustomData;
-            bool isSelected = (bool)data;
-
-            if (!isSelected) //Wenn der Knopf noch nicht gedrückt wurde
-            {
-                lamp.GetComponent<Renderer>().material = alarmMaterial;
-                securityLight.enabled = true;
-                isSelected = true;
-            }
-            else //Wenn der Knopf schon aktiviert ist
-            {
-                lamp.GetComponent<Renderer>().material = originMaterial;
-                securityLight.enabled = false;
-                isSelected = false;
-            }
         }
     }
 }

@@ -2511,7 +2511,6 @@ GameObject:
   - component: {fileID: 383771604}
   - component: {fileID: 383771603}
   - component: {fileID: 383771602}
-  - component: {fileID: 383771605}
   m_Layer: 0
   m_Name: SecurityPointLight
   m_TagString: Untagged
@@ -2616,28 +2615,6 @@ Transform:
   m_Father: {fileID: 1210200538}
   m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &383771605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383771601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 1
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 7
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &405356208 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8983183264830997065, guid: e68287dfeb1e545f99a93fe7f1813635,
@@ -9381,9 +9358,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1605505376}
   - component: {fileID: 1605505380}
-  - component: {fileID: 1605505379}
   - component: {fileID: 1605505378}
   - component: {fileID: 1605505377}
+  - component: {fileID: 1605505383}
+  - component: {fileID: 1605505382}
+  - component: {fileID: 1605505381}
   m_Layer: 8
   m_Name: Interactable_Button_3
   m_TagString: Untagged
@@ -9434,7 +9413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115f1a2a50d85cd4b9d6dad4c95622be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Interactable: {fileID: 1605505379}
+  m_Interactable: {fileID: 0}
   m_PokeCollider: {fileID: 1605505380}
   m_PokeConfiguration:
     m_UseConstant: 1
@@ -9444,7 +9423,20 @@ MonoBehaviour:
       m_EnablePokeAngleThreshold: 1
       m_PokeAngleThreshold: 45
     m_Variable: {fileID: 0}
---- !u!114 &1605505379
+--- !u!65 &1605505380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605505375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1605505381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9453,10 +9445,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 1605505375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1605505382}
+  sceneViewId: 8
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1605505382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605505375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &1605505383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605505375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18680c16192e336409c043f6236e5228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 687485825}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -9557,19 +9588,6 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!65 &1605505380
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605505375}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1629655339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7428147525720479297, guid: e68287dfeb1e545f99a93fe7f1813635,
