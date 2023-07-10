@@ -8809,7 +8809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431536573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.13642, y: -1.5650964, z: 4.760887}
+  m_LocalPosition: {x: -7.13642, y: 1.59, z: 10.283}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11606,6 +11606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowMesh: {fileID: 999398157}
+  movementObjekt: {fileID: 1253964912}
+  movementScript: ActionBasedContinuousMoveProvider
   watcher: {fileID: 1431536574}
 --- !u!1 &1897729999
 GameObject:
