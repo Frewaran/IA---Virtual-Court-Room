@@ -26,6 +26,7 @@ public class SecurityAlarm : MonoBehaviourPun
     public void Alarm() 
     {
         photonView.RPC("SetAlarm", RpcTarget.All);
+        //SetAlarm();
     }
 
     [PunRPC]

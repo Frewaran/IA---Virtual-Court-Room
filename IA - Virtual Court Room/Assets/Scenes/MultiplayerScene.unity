@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34037974, g: 0.37560162, b: 0.43096977, a: 1}
+  m_IndirectSpecularColor: {r: 0.34037212, g: 0.37571606, b: 0.4305535, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 103396259}
   m_Layer: 7
   m_Name: LeftHand Controller
-  m_TagString: Untagged
+  m_TagString: LeftHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8298,7 +8298,7 @@ GameObject:
   - component: {fileID: 1394306528}
   - component: {fileID: 1394306531}
   - component: {fileID: 1394306530}
-  - component: {fileID: 1394306529}
+  - component: {fileID: 1394306534}
   - component: {fileID: 1394306532}
   - component: {fileID: 1394306533}
   m_Layer: 8
@@ -8323,22 +8323,6 @@ Transform:
   m_Father: {fileID: 340520655}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -30.557, z: 0}
---- !u!114 &1394306529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394306527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77c8ad54552841f47996220119e1f015, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lamp: {fileID: 1394306527}
-  securityLight: {fileID: 383771603}
-  originMaterial: {fileID: 2100000, guid: ef089553ff163994283f7b40c2f049d7, type: 2}
-  alarmMaterial: {fileID: 2100000, guid: 9099cdc3c42255a4bb7371744cd6136c, type: 2}
 --- !u!23 &1394306530
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8428,6 +8412,22 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &1394306534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394306527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c8ad54552841f47996220119e1f015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lamp: {fileID: 1394306527}
+  securityLight: {fileID: 383771603}
+  originMaterial: {fileID: 2100000, guid: ef089553ff163994283f7b40c2f049d7, type: 2}
+  alarmMaterial: {fileID: 2100000, guid: 9099cdc3c42255a4bb7371744cd6136c, type: 2}
 --- !u!1 &1396441749
 GameObject:
   m_ObjectHideFlags: 0
@@ -8769,6 +8769,53 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_TeleportAnchorTransform: {fileID: 1414582635}
+--- !u!1 &1431536573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1431536575}
+  - component: {fileID: 1431536574}
+  m_Layer: 0
+  m_Name: SecondaryButtonWatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1431536574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431536573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177e00e9b697d6d46b59e7c93648bd07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondaryButtonPress:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1431536575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431536573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.13642, y: -1.5650964, z: 4.760887}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461005047 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5051095778199023512, guid: e68287dfeb1e545f99a93fe7f1813635,
@@ -9525,7 +9572,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1394306529}
+      - m_Target: {fileID: 1394306534}
         m_TargetAssemblyTypeName: SecurityAlarm, Assembly-CSharp
         m_MethodName: Alarm
         m_Mode: 1
@@ -11410,6 +11457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1866107203}
   - component: {fileID: 1866107204}
+  - component: {fileID: 1866107205}
   m_Layer: 0
   m_Name: TeleportationAnchor_Witness
   m_TagString: Untagged
@@ -11531,8 +11579,34 @@ MonoBehaviour:
   m_UpNormalToleranceDegrees: 30
   m_Teleporting:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1866107205}
+        m_TargetAssemblyTypeName: ToggleTeleportationArrow, Assembly-CSharp
+        m_MethodName: deactivateArrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 1866107203}
+--- !u!114 &1866107205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866107202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f33e1deafe2cf429f59949ddcc6298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowMesh: {fileID: 999398157}
+  watcher: {fileID: 1431536574}
 --- !u!1 &1897729999
 GameObject:
   m_ObjectHideFlags: 0
@@ -12168,7 +12242,7 @@ GameObject:
   - component: {fileID: 1992769091}
   m_Layer: 7
   m_Name: RightHand Controller
-  m_TagString: Untagged
+  m_TagString: RightHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
