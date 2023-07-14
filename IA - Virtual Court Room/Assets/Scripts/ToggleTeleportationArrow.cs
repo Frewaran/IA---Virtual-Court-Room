@@ -8,19 +8,20 @@ public class ToggleTeleportationArrow : MonoBehaviour
 {
     public GameObject arrowMesh;
     public GameObject movementObjekt; //Darin sind die Skripts zum Bewegen, drehen etc.
-    public string movementScript;
+    private string movementScript; //Der Name des Skripts das deaktiviert werden soll (z.B. movement zum Laufen)
 
     public SecondaryButtonWatcher watcher; 
 
-    private bool IsPressed = false;
     private MonoBehaviour deactivateMovement;
     private bool stuckInArrow = false; //gibt an ob man auf einer festen Position ist oder nicht
+
 
     // Start is called before the first frame update
     void Start()
     {
-        watcher.secondaryButtonPress.AddListener(onSecondaryButtonEvent);
+        watcher.secondaryButtonPress.AddListener(onSecondaryButtonEvent); //Event, wenn der B oder Y Button gedrückt wird
 
+        movementScript = "ActionBasedContinuousMoveProvider";
         deactivateMovement = movementObjekt.GetComponent(movementScript) as MonoBehaviour;
     }
 
@@ -29,11 +30,10 @@ public class ToggleTeleportationArrow : MonoBehaviour
     {
         if (stuckInArrow) //wird nur aufgerufen, wenn man auf fester Position ist.
         {
-            IsPressed = pressed;
-            if (!pressed)
+            if (!pressed) //Je nach Abfrage wird das Event beim runterdrücken oder beim loslassen von B/Y ausgelöst
             {
-                arrowMesh.SetActive(true);
-                deactivateMovement.enabled = true;
+                arrowMesh.SetActive(true); //Teleportationspfeil wird wieder sichtbar
+                deactivateMovement.enabled = true; //Laufen wird wieder aktiviert
             }
         }
     }
@@ -46,8 +46,9 @@ public class ToggleTeleportationArrow : MonoBehaviour
 
     public void deactivateArrow()
     {
-        arrowMesh.SetActive(false);
-        deactivateMovement.enabled = false;
+
+        arrowMesh.SetActive(false); //Teleportationspfeil unsichtbar machen
+        deactivateMovement.enabled = false; //Laufen deaktivieren
         stuckInArrow = true;
     }
 }

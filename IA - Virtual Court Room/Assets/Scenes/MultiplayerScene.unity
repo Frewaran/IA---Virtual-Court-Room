@@ -4093,6 +4093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 483108064}
   - component: {fileID: 483108065}
+  - component: {fileID: 483108066}
   m_Layer: 0
   m_Name: TeleportationAnchor_Defendent_Attorney
   m_TagString: Untagged
@@ -4214,8 +4215,36 @@ MonoBehaviour:
   m_UpNormalToleranceDegrees: 30
   m_Teleporting:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 483108066}
+        m_TargetAssemblyTypeName: ToggleTeleportationArrow, Assembly-CSharp
+        m_MethodName: deactivateArrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 483108064}
+--- !u!114 &483108066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483108063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f33e1deafe2cf429f59949ddcc6298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowMesh: {fileID: 339843311}
+  movementObjekt: {fileID: 1253964912}
+  watcher: {fileID: 1431536574}
+  controllerObject: {fileID: 0}
 --- !u!1 &487047214
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,6 +4779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 580850118}
   - component: {fileID: 580850119}
+  - component: {fileID: 580850120}
   m_Layer: 0
   m_Name: TeleportationAnchor_Plaintiff_Client
   m_TagString: Untagged
@@ -4871,8 +4901,36 @@ MonoBehaviour:
   m_UpNormalToleranceDegrees: 30
   m_Teleporting:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 580850120}
+        m_TargetAssemblyTypeName: ToggleTeleportationArrow, Assembly-CSharp
+        m_MethodName: deactivateArrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 580850118}
+--- !u!114 &580850120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580850117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f33e1deafe2cf429f59949ddcc6298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowMesh: {fileID: 1517250559}
+  movementObjekt: {fileID: 1253964912}
+  watcher: {fileID: 1431536574}
+  controllerObject: {fileID: 0}
 --- !u!23 &589595953 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6170364737530096044, guid: e68287dfeb1e545f99a93fe7f1813635,
@@ -7362,6 +7420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1176120403}
   - component: {fileID: 1176120404}
+  - component: {fileID: 1176120405}
   m_Layer: 0
   m_Name: TeleportationAnchor_Judge
   m_TagString: Untagged
@@ -7483,8 +7542,36 @@ MonoBehaviour:
   m_UpNormalToleranceDegrees: 30
   m_Teleporting:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1176120405}
+        m_TargetAssemblyTypeName: ToggleTeleportationArrow, Assembly-CSharp
+        m_MethodName: deactivateArrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 1176120403}
+--- !u!114 &1176120405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176120402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f33e1deafe2cf429f59949ddcc6298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowMesh: {fileID: 455246195}
+  movementObjekt: {fileID: 1253964912}
+  watcher: {fileID: 1431536574}
+  controllerObject: {fileID: 0}
 --- !u!1 &1188278859
 GameObject:
   m_ObjectHideFlags: 0
@@ -8646,6 +8733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1414582635}
   - component: {fileID: 1414582636}
+  - component: {fileID: 1414582637}
   m_Layer: 0
   m_Name: TeleportationAnchor_Plaintiff_Attorney
   m_TagString: Untagged
@@ -8767,8 +8855,36 @@ MonoBehaviour:
   m_UpNormalToleranceDegrees: 30
   m_Teleporting:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1414582637}
+        m_TargetAssemblyTypeName: ToggleTeleportationArrow, Assembly-CSharp
+        m_MethodName: deactivateArrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 1414582635}
+--- !u!114 &1414582637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414582634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f33e1deafe2cf429f59949ddcc6298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowMesh: {fileID: 1486032430}
+  movementObjekt: {fileID: 1253964912}
+  watcher: {fileID: 1431536574}
+  controllerObject: {fileID: 0}
 --- !u!1 &1431536573
 GameObject:
   m_ObjectHideFlags: 0
@@ -11607,8 +11723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowMesh: {fileID: 999398157}
   movementObjekt: {fileID: 1253964912}
-  movementScript: ActionBasedContinuousMoveProvider
   watcher: {fileID: 1431536574}
+  controllerObject: {fileID: 1992769089}
 --- !u!1 &1897729999
 GameObject:
   m_ObjectHideFlags: 0
@@ -12810,6 +12926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2065720579}
   - component: {fileID: 2065720580}
+  - component: {fileID: 2065720581}
   m_Layer: 0
   m_Name: TeleportationAnchor_Defendent_Client
   m_TagString: Untagged
@@ -12931,8 +13048,36 @@ MonoBehaviour:
   m_UpNormalToleranceDegrees: 30
   m_Teleporting:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2065720581}
+        m_TargetAssemblyTypeName: ToggleTeleportationArrow, Assembly-CSharp
+        m_MethodName: deactivateArrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_TeleportAnchorTransform: {fileID: 2065720579}
+--- !u!114 &2065720581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065720578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f33e1deafe2cf429f59949ddcc6298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowMesh: {fileID: 1725767058}
+  movementObjekt: {fileID: 1253964912}
+  watcher: {fileID: 1431536574}
+  controllerObject: {fileID: 0}
 --- !u!1 &2073131989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8744307853696463454, guid: e68287dfeb1e545f99a93fe7f1813635,
