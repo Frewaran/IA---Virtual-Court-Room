@@ -9,20 +9,24 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        /* [Multiplayer]
+         * Wenn die Szene startet, dann wird man erstmal ConnectToServer() ausgeführt.
+         */
         ConnectToServer();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void ConnectToServer() {
+        /* [Multiplayer]
+         * Hier wird versucht auf den Photon-Server sich zu verbinden.
+         */
         PhotonNetwork.ConnectUsingSettings();
         Debug.Log("Trying to connect to server...");
     }
 
+    /* [Multiplayer]
+     * Das ist eine spezielle Funktion von Photon. Wenn man zum Master verbunden ist, also wenn ConnectToServer() funktioniert hat, dann wird diese Funktion automatisch ausgeführt.
+     * Dann werden hier ein paar Einstellungen getroffen und am Ende wird man mit einem Raum verbunden oder erstellt diesen zuerst, wenn es ihn noch nicht gibt.
+     */
     public override void OnConnectedToMaster() {
         Debug.Log("Connected to server.");
         base.OnConnectedToMaster();
@@ -34,11 +38,19 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinOrCreateRoom("Room 1", roomOptions, TypedLobby.Default);
     }
 
+    /* [Multiplayer]
+     * Das ist eine spezielle Funktion von Photon. Wenn man mit einem Raum verbunden ist, dann wird diese Funktion automatisch ausgeführt.
+     * Das ist nur ein Test, damit man in der Console sehen kann, ob es funktioniert hat.
+     */
     public override void OnJoinedRoom() {
         Debug.Log("Joined a room.");
         base.OnJoinedRoom();
     }
 
+    /* [Multiplayer]
+     * Das ist eine spezielle Funktion von Photon. Wenn man ein neuer Spieler den Raum betritt, dann wird diese Funktion automatisch ausgeführt.
+     * Das ist nur ein Test, damit man in der Console sehen kann, ob es funktioniert hat.
+     */
     public override void OnPlayerEnteredRoom(Player newPlayer) {
         Debug.Log("A new player joined the room");
         base.OnPlayerEnteredRoom(newPlayer);

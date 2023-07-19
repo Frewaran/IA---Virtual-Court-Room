@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 using Photon.Pun;
-using Photon.Realtime;
-using ExitGames.Client.Photon;
 using System;
 
+/* [MULTIPLAYER]
+ * MonoBehaviour wurde zu MonoBehaviourPun erweitert, weil man so das photonView-Element nutzen kann
+ */
 public class SecurityAlarm : MonoBehaviourPun
 {
     public GameObject lamp;
@@ -25,13 +26,19 @@ public class SecurityAlarm : MonoBehaviourPun
     
     public void Alarm() 
     {
-        photonView.RPC("SetAlarm", RpcTarget.All);
+        /* [MULTIPLAYER]
+         * Man nutzt nicht mehr einfach SetAlarm(); zum Ausführen des Befehls, sondern nutzt von der photonView-Komponente .RPC und wählt .All als Target, damit es für alle gilt.
+         */
+        photonView.RPC("SetAlarm", RpcTarget.All, isSelected);
         //SetAlarm();
     }
 
+    /* [MULTIPLAYER]
+     * Wenn eine Funktion für alle ausgeführt werden soll, dann wir davor [PunRPC] geschrieben.
+     */
     [PunRPC]
-    public void SetAlarm() {
-        if (!isSelected) //Wenn der Knopf noch nicht gedrückt wurde
+    public void SetAlarm(bool _isSelected) {
+        if (!_isSelected) //Wenn der Knopf noch nicht gedrückt wurde
         {
             lamp.GetComponent<Renderer>().material = alarmMaterial;
             securityLight.enabled = true;

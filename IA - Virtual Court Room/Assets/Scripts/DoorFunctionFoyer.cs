@@ -8,6 +8,10 @@ public class DoorFunction : MonoBehaviour
 {
     private Transform door;
 
+    /* [Multiplayer]
+     * XRSimpleNetworkInteractable wird hier genutzt, damit man die Ownership des Objektes weitergeben kann und
+     * damit jeder im Raum das Benutzen sehen kann (siehe XRSimpleNetworkInteractable.cs);
+     */
     private XRSimpleNetworkInteractable interactable;
     private bool isDragging = false;
 
