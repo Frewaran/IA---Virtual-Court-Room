@@ -34,6 +34,7 @@ public class ToggleTeleportationArrow : MonoBehaviour
             {
                 arrowMesh.SetActive(true); //Teleportationspfeil wird wieder sichtbar
                 deactivateMovement.enabled = true; //Laufen wird wieder aktiviert
+                stuckInArrow = false;
             }
         }
     }

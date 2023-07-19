@@ -4244,7 +4244,6 @@ MonoBehaviour:
   arrowMesh: {fileID: 339843311}
   movementObjekt: {fileID: 1253964912}
   watcher: {fileID: 1431536574}
-  controllerObject: {fileID: 0}
 --- !u!1 &487047214
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,6 +4429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3155e9c6f48574429a8a786e5b00b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  watcher: {fileID: 1431536574}
+  readMaterial: {fileID: 2100000, guid: 5cb199798fcc300419c9679fe1f72d4f, type: 2}
 --- !u!1 &493162633
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,32 +4613,7 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 487047218}
-        m_TargetAssemblyTypeName: TextFollowsCamera, Assembly-CSharp
-        m_MethodName: textNotVisible
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 504083069}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 5cb199798fcc300419c9679fe1f72d4f,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -4930,7 +4906,6 @@ MonoBehaviour:
   arrowMesh: {fileID: 1517250559}
   movementObjekt: {fileID: 1253964912}
   watcher: {fileID: 1431536574}
-  controllerObject: {fileID: 0}
 --- !u!23 &589595953 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6170364737530096044, guid: e68287dfeb1e545f99a93fe7f1813635,
@@ -7571,7 +7546,6 @@ MonoBehaviour:
   arrowMesh: {fileID: 455246195}
   movementObjekt: {fileID: 1253964912}
   watcher: {fileID: 1431536574}
-  controllerObject: {fileID: 0}
 --- !u!1 &1188278859
 GameObject:
   m_ObjectHideFlags: 0
@@ -8884,7 +8858,6 @@ MonoBehaviour:
   arrowMesh: {fileID: 1486032430}
   movementObjekt: {fileID: 1253964912}
   watcher: {fileID: 1431536574}
-  controllerObject: {fileID: 0}
 --- !u!1 &1431536573
 GameObject:
   m_ObjectHideFlags: 0
@@ -11724,7 +11697,6 @@ MonoBehaviour:
   arrowMesh: {fileID: 999398157}
   movementObjekt: {fileID: 1253964912}
   watcher: {fileID: 1431536574}
-  controllerObject: {fileID: 1992769089}
 --- !u!1 &1897729999
 GameObject:
   m_ObjectHideFlags: 0
@@ -13077,7 +13049,6 @@ MonoBehaviour:
   arrowMesh: {fileID: 1725767058}
   movementObjekt: {fileID: 1253964912}
   watcher: {fileID: 1431536574}
-  controllerObject: {fileID: 0}
 --- !u!1 &2073131989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8744307853696463454, guid: e68287dfeb1e545f99a93fe7f1813635,
