@@ -72,7 +72,7 @@ public class SecondaryButtonWatcher : MonoBehaviour
         {
             if (device.TryGetFeatureValue(CommonUsages.secondaryButton, out discardedValue))
             {
-                devicesWithSecondaryButton.Add(device); // Add any devices that have a primary button.
+                devicesWithSecondaryButton.Add(device); // Add any devices that have a secondary button.
             }
         }
     }

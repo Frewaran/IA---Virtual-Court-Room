@@ -15,6 +15,13 @@ public class ToggleTeleportationArrow : MonoBehaviour
     private MonoBehaviour deactivateMovement;
     private bool stuckInArrow = false; //gibt an ob man auf einer festen Position ist oder nicht
 
+    //Events für das deaktivieren/aktivieren des Teleportationsstrahls
+    public delegate void inArrow();
+    public static event inArrow OnDeactivateRay;
+
+    public delegate void outArrow();
+    public static event outArrow OnActivateRay;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +30,7 @@ public class ToggleTeleportationArrow : MonoBehaviour
 
         movementScript = "ActionBasedContinuousMoveProvider";
         deactivateMovement = movementObjekt.GetComponent(movementScript) as MonoBehaviour;
+
     }
 
 
@@ -33,7 +41,10 @@ public class ToggleTeleportationArrow : MonoBehaviour
             if (!pressed) //Je nach Abfrage wird das Event beim runterdrücken oder beim loslassen von B/Y ausgelöst
             {
                 arrowMesh.SetActive(true); //Teleportationspfeil wird wieder sichtbar
-                deactivateMovement.enabled = true; //Laufen wird wieder aktiviert
+                deactivateMovement.enabled = true; //Laufen wird wieder aktiviert (müsste angepasst werden, wenn User das in den Einstellungen deaktivieren kann)
+                if (OnActivateRay != null) //Teleportationsstrahl wird wieder aktiviert
+                    OnActivateRay();
+
                 stuckInArrow = false;
             }
         }
@@ -42,7 +53,7 @@ public class ToggleTeleportationArrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void deactivateArrow()
@@ -50,6 +61,8 @@ public class ToggleTeleportationArrow : MonoBehaviour
 
         arrowMesh.SetActive(false); //Teleportationspfeil unsichtbar machen
         deactivateMovement.enabled = false; //Laufen deaktivieren
+        if (OnDeactivateRay != null) //Teleportationsstrahl deaktivieren
+            OnDeactivateRay();
         stuckInArrow = true;
     }
 }

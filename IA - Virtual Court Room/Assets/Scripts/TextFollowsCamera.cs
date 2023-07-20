@@ -32,9 +32,11 @@ public class TextFollowsCamera : MonoBehaviour
     {
         if (isSelected)
         {
-            transform.LookAt(Camera.main.transform);
+            //Text richtet sich zur Kamera hin aus.
+            transform.LookAt(Camera.main.transform); 
             transform.Rotate(0, 180, 0);
 
+            //Wenn man sich vom Text entfernt, soll er sich deaktivieren
             Vector3 distanceVector = transform.position - Camera.main.transform.position;
             float distanceToText = distanceVector.magnitude;
             if (distanceToText > 4)
@@ -44,16 +46,16 @@ public class TextFollowsCamera : MonoBehaviour
 
     public void textVisible()
     {
-        transform.GetComponent<TextMeshPro>().enabled = true;
-        transform.parent.GetComponent<MeshRenderer>().enabled = false;
-        isSelected = true;
+        transform.GetComponent<TextMeshPro>().enabled = true; //Text wird sichtbar
+        transform.parent.GetComponent<MeshRenderer>().enabled = false; //Infopoint wird in der Zeit unsichtbar
+        isSelected = true; 
     }
 
     public void textNotVisible()
     {
-        transform.GetComponent<TextMeshPro>().enabled = false;
-        transform.parent.GetComponent<MeshRenderer>().enabled = true;
+        transform.GetComponent<TextMeshPro>().enabled = false; //Text wird unsichtbar
+        transform.parent.GetComponent<MeshRenderer>().enabled = true; //Infopoint wird wieder sichtbar
         isSelected = false;
-        transform.parent.GetComponent<Renderer>().material = readMaterial;
+        transform.parent.GetComponent<Renderer>().material = readMaterial; //Infopoint wird als gelesen markiert
     }
 }
