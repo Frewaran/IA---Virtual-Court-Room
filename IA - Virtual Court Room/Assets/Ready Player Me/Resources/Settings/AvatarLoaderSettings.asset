@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AvatarLoaderSettings
   m_EditorClassIdentifier: 
   AvatarCachingEnabled: 1
-  AvatarConfig: {fileID: 11400000, guid: 2e21b5c70c7ec194e8a3476cd651b553, type: 2}
+  AvatarConfig: {fileID: 0}
   GLTFDeferAgent: {fileID: 0}
