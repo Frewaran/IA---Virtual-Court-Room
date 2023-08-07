@@ -20,6 +20,8 @@ public class AvatarController : MonoBehaviour
     [SerializeField] private MapTransform head;
     [SerializeField] private MapTransform leftHand;
     [SerializeField] private MapTransform rightHand;
+    [SerializeField] private MapTransform leftFoot;
+    [SerializeField] private MapTransform rightFoot;
 
     [SerializeField] private float turnSmoothness;
     [SerializeField] private Transform IkHead;
@@ -32,5 +34,7 @@ public class AvatarController : MonoBehaviour
         head.MapVrAvatar();
         leftHand.MapVrAvatar();
         rightHand.MapVrAvatar();
+        leftFoot.MapVrAvatar();
+        rightFoot.MapVrAvatar();
     }
 }
