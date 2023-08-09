@@ -46,16 +46,18 @@ public class TextFollowsCamera : MonoBehaviour
 
     public void textVisible()
     {
-        transform.GetComponent<TextMeshPro>().enabled = true; //Text wird sichtbar
+        transform.GetComponent<Canvas>().enabled = true;
+        //transform.GetComponent<TextMeshPro>().enabled = true; //Text wird sichtbar
         transform.parent.GetComponent<MeshRenderer>().enabled = false; //Infopoint wird in der Zeit unsichtbar
         isSelected = true; 
     }
 
     public void textNotVisible()
     {
-        transform.GetComponent<TextMeshPro>().enabled = false; //Text wird unsichtbar
+        transform.GetComponent<Canvas>().enabled = false;
+        //transform.GetComponent<TextMeshPro>().enabled = false; //Text wird unsichtbar
         transform.parent.GetComponent<MeshRenderer>().enabled = true; //Infopoint wird wieder sichtbar
         isSelected = false;
-        transform.parent.GetComponent<Renderer>().material = readMaterial; //Infopoint wird als gelesen markiert
+        transform.parent.GetComponent<Renderer>().material = readMaterial; //Infopoint wird als gelesen markiert    
     }
 }
