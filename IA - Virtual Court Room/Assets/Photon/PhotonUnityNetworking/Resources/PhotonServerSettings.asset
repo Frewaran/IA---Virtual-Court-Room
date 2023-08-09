@@ -40,6 +40,9 @@ MonoBehaviour:
   - DestroyRpc
   - HeresWhy
   - SetAlarm
+  - DestroySpaceship
+  - Fire
+  - RespawnSpaceship
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
