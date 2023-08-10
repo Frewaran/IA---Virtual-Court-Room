@@ -20,7 +20,7 @@ public class AnimationController : MonoBehaviour
 
     private void AnimateLegs(InputAction.CallbackContext obj)
     {
-        bool isMovingForword = move.action.ReadValue<Vector2>().y > 0;
+        bool isMovingForword = move.action.ReadValue<UnityEngine.Vector2>().y > 0;
 
         if (isMovingForword)
         {
