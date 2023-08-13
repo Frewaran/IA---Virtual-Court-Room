@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR;
 using Photon.Pun;
 using Unity.XR.CoreUtils;
+using System;
 
 public class NetworkPlayer : MonoBehaviour
 {
@@ -48,6 +49,10 @@ public class NetworkPlayer : MonoBehaviour
                 item.enabled = false;
             }
         }
+    }
+
+    internal void LoadAvatar(string text) {
+        throw new NotImplementedException();
     }
 
     // Update is called once per frame
