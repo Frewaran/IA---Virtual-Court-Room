@@ -36,9 +36,9 @@ public class NetworkPlayer : MonoBehaviour
 
         // Hier werden die jeweiligen Transforms für alle Spieler gefunden
         headRig = rig.transform.Find("Camera Offset/Main Camera");
-        leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
-        rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
-        bodyRig = rig.transform.Find("Character Model/metarig");
+        leftHandRig = rig.transform.Find("LeftHand Controller");
+        rightHandRig = rig.transform.Find("RightHand Controller");
+        bodyRig = rig.transform.Find("RPM_Player_J");
 
         /* [Multplayer]
          * Für einen selber werden die Komponenten ausgeblendet. Man selbst steuert nämlich nicht das hier erschaffene Rig, sondern
