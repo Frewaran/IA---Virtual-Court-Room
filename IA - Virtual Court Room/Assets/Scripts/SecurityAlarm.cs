@@ -29,16 +29,16 @@ public class SecurityAlarm : MonoBehaviourPun
         /* [MULTIPLAYER]
          * Man nutzt nicht mehr einfach SetAlarm(); zum Ausführen des Befehls, sondern nutzt von der photonView-Komponente .RPC und wählt .All als Target, damit es für alle gilt.
          */
-        photonView.RPC("SetAlarm", RpcTarget.All, isSelected);
-        //SetAlarm();
+        //photonView.RPC("SetAlarm", RpcTarget.All, isSelected);
+        SetAlarm();
     }
 
     /* [MULTIPLAYER]
      * Wenn eine Funktion für alle ausgeführt werden soll, dann wir davor [PunRPC] geschrieben.
      */
     [PunRPC]
-    public void SetAlarm(bool _isSelected) {
-        if (!_isSelected) //Wenn der Knopf noch nicht gedrückt wurde
+    public void SetAlarm() { //bool _isSelected rausgeneommen
+        if (!isSelected) //Wenn der Knopf noch nicht gedrückt wurde   //habe hier von !_isSelecte auf !isSelected geändert
         {
             lamp.GetComponent<Renderer>().material = alarmMaterial;
             securityLight.enabled = true;
