@@ -23,23 +23,23 @@
       "hash": "cf9120d670c96014a687e3cbd69ff6d0a2e69a07"
     },
     "com.readyplayerme.core": {
-      "version": "https://github.com/readyplayerme/rpm-unity-sdk-core.git",
+      "version": "https://github.com/readyplayerme/rpm-unity-sdk-core.git#v3.1.1",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.0.2"
       },
-      "hash": "413870952d191e499fe6b5b716e156363764df9e"
+      "hash": "c1a73ff18822abb42988657e3908030fde7faf39"
     },
     "com.readyplayerme.webview": {
-      "version": "https://github.com/readyplayerme/rpm-unity-sdk-webview.git#v1.2.0",
+      "version": "https://github.com/readyplayerme/rpm-unity-sdk-webview.git#v1.2.1",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
         "com.unity.nuget.newtonsoft-json": "3.0.2"
       },
-      "hash": "9cb0d1052329238ed01aea976b00da844032ff74"
+      "hash": "e58ef3690d9f4e13c4be58cd73a52c71f1bce5d9"
     },
     "com.unity.animation.rigging": {
       "version": "1.1.1",
