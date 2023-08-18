@@ -1,0 +1,6 @@
+{
+    "name": "Packages_com.atteneder.gltfast_Runtime_Shader_Tests",
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}
