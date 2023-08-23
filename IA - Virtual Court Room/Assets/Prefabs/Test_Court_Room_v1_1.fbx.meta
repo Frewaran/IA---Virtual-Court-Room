@@ -77,6 +77,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ExtraRoomFloorMaterial
+    second: {fileID: 2100000, guid: 9e904f4e8e4334236bf5c9d9d02b490a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: FoyerFloorMaterial
     second: {fileID: 2100000, guid: dd56b41ca125c41ea9c1d1adc2cd34b8, type: 2}
   - first:
