@@ -22,6 +22,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ConsultationRoomWall_Material
+    second: {fileID: 2100000, guid: 3321a74cb15054116b5955ab696bd3cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: CourtDeskMaterial
     second: {fileID: 2100000, guid: c09c7cf366b184ea29ea6be43c234f9e, type: 2}
   - first:
@@ -29,6 +34,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: CourtDeskMaterial.002
     second: {fileID: 2100000, guid: f088bcf31f9f74630bfe4febc8fc7320, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CourtEmporeFloorMaterial
+    second: {fileID: 2100000, guid: 82d52412b01934880b0ef41b156c07df, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
