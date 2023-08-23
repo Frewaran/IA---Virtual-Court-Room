@@ -17,6 +17,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ConsulatationRoomFloorMaterial
+    second: {fileID: 2100000, guid: a021eadc11dd349c3a631946a070a55f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: CourtDeskMaterial
     second: {fileID: 2100000, guid: c09c7cf366b184ea29ea6be43c234f9e, type: 2}
   - first:
@@ -79,6 +84,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: ExtraRoomFloorMaterial
     second: {fileID: 2100000, guid: 9e904f4e8e4334236bf5c9d9d02b490a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ExtraRoom_Wall_Material
+    second: {fileID: 2100000, guid: c7f481a3c448849488a00e922bc038e1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
