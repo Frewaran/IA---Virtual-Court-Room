@@ -9709,7 +9709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 586571407}
   m_Layer: 0
-  m_Name: Map
+  m_Name: MapReferencePoint_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13775,7 +13775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951009614}
   m_Layer: 5
-  m_Name: End
+  m_Name: Endpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17219,7 +17219,7 @@ GameObject:
   - component: {fileID: 1210713265}
   - component: {fileID: 1210713264}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MinimapCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
