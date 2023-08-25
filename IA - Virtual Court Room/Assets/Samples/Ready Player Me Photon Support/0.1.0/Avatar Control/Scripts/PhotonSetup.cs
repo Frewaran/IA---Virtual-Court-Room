@@ -46,7 +46,7 @@ namespace ReadyPlayerMe.PhotonSupport
             
             UI.SetActive(false);
             GameObject character = PhotonNetwork.Instantiate("RPM_Photon_Test_Character", Vector3.zero, Quaternion.identity);
-            character.GetComponent<NetworkPlayer>().LoadAvatar(inputField.text);
+            //character.GetComponent<NetworkPlayer>().LoadAvatar(inputField.text);
         }
     }
 }

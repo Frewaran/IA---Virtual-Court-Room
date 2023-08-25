@@ -6,9 +6,6 @@ using System;
 using ReadyPlayerMe.AvatarLoader;
 
 public class NetworkPlayer : MonoBehaviour {
-
-    [SerializeField] private AvatarConfig config;
-
     public Transform head;
     public Transform leftHand;
     public Transform rightHand;
@@ -26,19 +23,8 @@ public class NetworkPlayer : MonoBehaviour {
     private Transform leftHandRig;
     private Transform rightHandRig;
 
-    private SkinnedMeshRenderer[] skinnedMeshRenderers;
-
-    private Transform leftEye;
-    private Transform rightEye;
-    private const string FULL_BODY_LEFT_EYE_BONE_NAME = "RPM_Photon_Text_Character/Armature/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye";
-    private const string FULL_BODY_RIGHT_EYE_BONE_NAME = "RPM_Photon_Text_Character/Armature/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye";
-
     private void Awake() {
         photonView = GetComponent<PhotonView>();
-
-        skinnedMeshRenderers = GetComponentsInChildren<SkinnedMeshRenderer>();
-        leftEye = transform.Find(FULL_BODY_LEFT_EYE_BONE_NAME);
-        rightEye = transform.Find(FULL_BODY_RIGHT_EYE_BONE_NAME);
     }
     // Start is called before the first frame update
     void Start()
@@ -110,40 +96,5 @@ public class NetworkPlayer : MonoBehaviour {
         else {
             handAnimator.SetFloat("Grip", 0f);
         }
-    }
-
-    public void LoadAvatar(string url) {
-        photonView.RPC("SetPlayer", RpcTarget.AllBuffered, url);
-    }
-
-    [PunRPC]
-    private void SetPlayer(string incomingUrl) {
-        AvatarObjectLoader loader = new AvatarObjectLoader();
-        loader.LoadAvatar(incomingUrl);
-        loader.AvatarConfig = config;
-        loader.OnCompleted += (sender, args) =>
-        {
-            leftEye.transform.localPosition = args.Avatar.transform.Find(FULL_BODY_LEFT_EYE_BONE_NAME).localPosition;
-            rightEye.transform.localPosition = args.Avatar.transform.Find(FULL_BODY_RIGHT_EYE_BONE_NAME).localPosition;
-
-            TransferMesh(args.Avatar);
-        };
-    }
-
-    private void TransferMesh(GameObject source) {
-        Animator sourceAnimator = source.GetComponentInChildren<Animator>();
-        SkinnedMeshRenderer[] sourceMeshes = source.GetComponentsInChildren<SkinnedMeshRenderer>();
-
-        for (int i = 0; i < sourceMeshes.Length; i++) {
-            Mesh mesh = sourceMeshes[i].sharedMesh;
-            skinnedMeshRenderers[i].sharedMesh = mesh;
-
-            Material[] materials = sourceMeshes[i].sharedMaterials;
-            skinnedMeshRenderers[i].sharedMaterials = materials;
-        }
-
-        Avatar avatar = sourceAnimator.avatar;
-
-        Destroy(source);
     }
 }
