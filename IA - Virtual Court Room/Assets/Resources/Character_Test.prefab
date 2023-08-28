@@ -4972,7 +4972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06413b7129138d42966f6abfbbfc8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  config: {fileID: 11400000, guid: 7d72701409fb5ac4b8cf68899571e8cf, type: 2}
   head: {fileID: 9132101124016470752}
   leftHand: {fileID: 6808559833665529726}
   rightHand: {fileID: 4822795153976864513}

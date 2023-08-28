@@ -8,6 +8,8 @@ public class AnimateHandOnInput : MonoBehaviour
     public InputActionProperty pinchAnimationAction;
     public InputActionProperty gripAnimationAction;
 
+    public InputActionProperty leftStick; //Zum laufen test
+
     public Animator handAnimator;
 
     // Start is called before the first frame update
@@ -24,5 +26,9 @@ public class AnimateHandOnInput : MonoBehaviour
 
         float gripValue = gripAnimationAction.action.ReadValue<float>();
         handAnimator.SetFloat("Grip", gripValue);
+
+
+        handAnimator.SetFloat("WalkSpeed", leftStick.action.ReadValue<UnityEngine.Vector2>().y);
+
     }
 }
