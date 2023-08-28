@@ -127,6 +127,26 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: M_CourtFloorMaterial
+    second: {fileID: 2100000, guid: cdfd2fa38fab14962aa05ced657b80c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Material
+    second: {fileID: 2100000, guid: ad32ea3b9283b41358f688d57dadab30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_WoodMaterial
+    second: {fileID: 2100000, guid: 28b0a69a29b1d40ad816cbeee912be78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: edfdad9020d614c28a839476cb28b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: PaperMaterial
     second: {fileID: 2100000, guid: 86b49008badd5411eb89a9b291673347, type: 2}
   - first:
@@ -194,6 +214,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Wall_Material
     second: {fileID: 2100000, guid: 2d3a5a353ea8a420692e14d7468a54a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowDarkMaterial
+    second: {fileID: 2100000, guid: f4fb137f120a24aa1b4260bd8d34aa98, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
