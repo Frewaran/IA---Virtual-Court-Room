@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 23056354}
   - component: {fileID: 23056353}
   m_Layer: 5
-  m_Name: Pause Menue
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 91665135}
   m_Layer: 5
-  m_Name: Start
+  m_Name: Singleplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7086,7 +7086,7 @@ GameObject:
   - component: {fileID: 1018573200}
   - component: {fileID: 1018573199}
   m_Layer: 5
-  m_Name: Servereinstellungen
+  m_Name: Panel_ServerEinstellungen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7697,7 +7697,7 @@ GameObject:
   - component: {fileID: 1084191042}
   - component: {fileID: 1084191041}
   m_Layer: 5
-  m_Name: Anmeldemaske
+  m_Name: Panel_Anmeldemaske
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8297,7 +8297,7 @@ GameObject:
   - component: {fileID: 1261386943}
   - component: {fileID: 1261386942}
   m_Layer: 5
-  m_Name: Multiplayer Menue
+  m_Name: Panel_Multiplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9461,7 +9461,7 @@ GameObject:
   - component: {fileID: 1441774004}
   - component: {fileID: 1441774003}
   m_Layer: 5
-  m_Name: Start Menue
+  m_Name: StartMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9562,7 +9562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470206554}
   m_Layer: 5
-  m_Name: Multiplayer Mode
+  m_Name: Multiplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
