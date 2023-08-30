@@ -17,6 +17,51 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Char_Bank_Material
+    second: {fileID: 2100000, guid: 7d6242c5dbf3f4b118fe8b64b03b881c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Bank_Material.001
+    second: {fileID: 2100000, guid: 049f9617040124e8f8d46f2843bed687, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Fabrik
+    second: {fileID: 2100000, guid: 85739a1c292f54468840b987cab15bcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Judge_Material
+    second: {fileID: 2100000, guid: b84508a26c84c41d0b0fb4855592d50d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Plastik
+    second: {fileID: 2100000, guid: 9b74be61398c4496f9b14adf80af7a55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Plastik.001
+    second: {fileID: 2100000, guid: 055255cea44084c12bcec297c5336293, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ClockBodyMaterial
+    second: {fileID: 2100000, guid: cddb3a06d9e8843e9a8f3f286f85f698, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ClockFaceMaterial
+    second: {fileID: 2100000, guid: 421a46bea741d4a119d2eb12ce990d8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ClockHandleMaterial
+    second: {fileID: 2100000, guid: 1b6b28d5d99514cdb8d22c1f27144bf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ConsulatationRoomFloorMaterial
     second: {fileID: 2100000, guid: a021eadc11dd349c3a631946a070a55f, type: 2}
   - first:
@@ -72,6 +117,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Court_Door_Material
+    second: {fileID: 2100000, guid: 4fdbd41654bf943518b6d3cb57b2f756, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Darkwood material_Texture
+    second: {fileID: 2100000, guid: e7cfb8b61db364a4e9885f816285232c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Darkwood material_Texture.001
+    second: {fileID: 2100000, guid: 7194f615852b84bb4861f1e775b018dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ElevatorMaterial
     second: {fileID: 2100000, guid: 74b117f28938e4eaba06c87cc2d6e0dc, type: 2}
   - first:
@@ -89,6 +149,31 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: ElevatorMetalMaterial_panel_3
     second: {fileID: 2100000, guid: b4e3932b72a4e42348ecf097896d8405, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elevator_light
+    second: {fileID: 2100000, guid: b9c043e0595234475b3853cfd77ba800, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elevator_metal
+    second: {fileID: 2100000, guid: ba0fd5aee589145b8b9d47f88ff8e236, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elevator_metal.001
+    second: {fileID: 2100000, guid: 853af64efdd6f41da8d0db2f1e840a41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elevator_plastik
+    second: {fileID: 2100000, guid: d0966f886ca22428e8dbdc9a157f6e2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elevator_plastik.001
+    second: {fileID: 2100000, guid: 7a3a4275b5e874030a068cb323e0c590, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -127,6 +212,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: MASTER_ConsultationRoomFloorMaterial
+    second: {fileID: 2100000, guid: 9f5cffcaaae3240f9aa6fa03b5af0005, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MASTER_CourtFloorMaterial
+    second: {fileID: 2100000, guid: 687229d45f333466aa528d5f7afc8e64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MASTER_GalleryFloorMaterial
+    second: {fileID: 2100000, guid: 81ad16be5083841f790b01b100aae57f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: M_CourtFloorMaterial
     second: {fileID: 2100000, guid: cdfd2fa38fab14962aa05ced657b80c6, type: 2}
   - first:
@@ -142,6 +242,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Master_Texture
+    second: {fileID: 2100000, guid: f54a223b1708a419f95c05b630591edf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material
     second: {fileID: 2100000, guid: edfdad9020d614c28a839476cb28b707, type: 2}
   - first:
@@ -154,6 +259,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Papier_Spitzbecher
     second: {fileID: 2100000, guid: c8c700f80152e4e679bab9db039f434c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastik_Stand
+    second: {fileID: 2100000, guid: 07638d79743a4416c8d6ac7e75c2b8c3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -224,6 +334,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: WindowMaterial
     second: {fileID: 2100000, guid: 319cc34404dda4df2bf73f2083ad9e89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood material_Texture
+    second: {fileID: 2100000, guid: bb5cb2e87d84c48f89eb37c87f0e3dab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
