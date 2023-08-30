@@ -846,30 +846,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06413b7129138d42966f6abfbbfc8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armature: {fileID: 0}
-  hips: {fileID: 0}
-  spine: {fileID: 0}
-  spine1: {fileID: 0}
-  spine2: {fileID: 0}
-  neck: {fileID: 0}
-  head: {fileID: 0}
-  headtop: {fileID: 0}
-  lefteye: {fileID: 0}
-  righteye: {fileID: 0}
-  leftshoulder: {fileID: 0}
-  leftarm: {fileID: 0}
-  leftforarm: {fileID: 0}
-  lefthand: {fileID: 0}
-  rightshoulder: {fileID: 0}
-  rightarm: {fileID: 0}
-  rightforarm: {fileID: 0}
-  righthand: {fileID: 0}
-  leftupleg: {fileID: 0}
-  leftleg: {fileID: 0}
-  leftfoot: {fileID: 0}
-  rightupleg: {fileID: 0}
-  rightleg: {fileID: 0}
-  rightfoot: {fileID: 0}
+  armature: {fileID: 1067350285836965448}
+  hips: {fileID: 6883238154833607303}
+  spine: {fileID: 6255120391472005005}
+  spine1: {fileID: 7875305884124606337}
+  spine2: {fileID: 5066519552357973268}
+  neck: {fileID: 7727865613942543025}
+  head: {fileID: 8532332561261964911}
+  headtop: {fileID: 3805872687831845539}
+  lefteye: {fileID: 3326313585115051626}
+  righteye: {fileID: 5300869829707199283}
+  leftshoulder: {fileID: 6642935981841208001}
+  leftarm: {fileID: 3465772582921925086}
+  leftforarm: {fileID: 7124302359935828431}
+  lefthand: {fileID: 2860930158185402585}
+  rightshoulder: {fileID: 4160610927520326746}
+  rightarm: {fileID: 3984195641797968159}
+  rightforarm: {fileID: 7890090278176805007}
+  righthand: {fileID: 5309594499226280073}
+  leftupleg: {fileID: 4512983333388620600}
+  leftleg: {fileID: 7862316847163325255}
+  leftfoot: {fileID: 7400518910091691172}
+  rightupleg: {fileID: 6656061668076545971}
+  rightleg: {fileID: 6656061668076545971}
+  rightfoot: {fileID: 419009522314315185}
   leftHandAnimator: {fileID: 9500000, guid: 1ae9aefe37a62de429ddc2edd1ca36f3, type: 3}
   rightHandAnimator: {fileID: 9500000, guid: b6c38558987444240b3b3950e4450b77, type: 3}
 --- !u!1 &8118771168133719099
