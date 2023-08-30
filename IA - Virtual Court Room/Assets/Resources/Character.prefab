@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 8906189695311169791}
-  leftHand: {fileID: 6464102694397651633}
+  leftHand: {fileID: 6118366289551814836}
   rightHand: {fileID: 5596729066380252561}
   leftHandAnimator: {fileID: 9500000, guid: 1ae9aefe37a62de429ddc2edd1ca36f3, type: 3}
   rightHandAnimator: {fileID: 9500000, guid: b6c38558987444240b3b3950e4450b77, type: 3}
@@ -753,9 +753,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8665475988222524469}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6464102694397651633 stripped
+--- !u!4 &6118366289551814836 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2446843663579977348, guid: ef3f6f124fb9b6c4290f48e20fcbb8e5,
+  m_CorrespondingSourceObject: {fileID: 3218166934148992129, guid: ef3f6f124fb9b6c4290f48e20fcbb8e5,
     type: 3}
   m_PrefabInstance: {fileID: 8665475988222524469}
   m_PrefabAsset: {fileID: 0}
