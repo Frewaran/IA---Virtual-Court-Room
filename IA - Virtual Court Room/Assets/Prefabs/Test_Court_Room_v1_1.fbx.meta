@@ -127,6 +127,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Court_Wall_Material
+    second: {fileID: 2100000, guid: d1d472fd6645848dfb66f723deb93231, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Court_Wall_Material.001
+    second: {fileID: 2100000, guid: 3c3ccaeec849242088350f211decc552, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Court_Window_Material
+    second: {fileID: 2100000, guid: 0e78af9c7e8264ec7b4c8b828d268437, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Darkwood material_Texture
     second: {fileID: 2100000, guid: e7cfb8b61db364a4e9885f816285232c, type: 2}
   - first:
@@ -194,6 +209,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: FoyerFloorMaterial
     second: {fileID: 2100000, guid: dd56b41ca125c41ea9c1d1adc2cd34b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Foyer_Wall_Material
+    second: {fileID: 2100000, guid: fc64fa9a37a4e44f892b85519be95d2a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
