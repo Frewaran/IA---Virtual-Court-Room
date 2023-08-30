@@ -34,6 +34,11 @@ public class NewNetworkPlayer : MonoBehaviour {
             transform.GetChild(4).gameObject.SetActive(false);
             transform.GetChild(5).gameObject.SetActive(false);
 
+            transform.GetChild(6).gameObject.transform.GetChild(0).gameObject.layer = 0;
+            transform.GetChild(6).gameObject.transform.GetChild(1).gameObject.layer = 0;
+            transform.GetChild(6).gameObject.transform.GetChild(2).gameObject.layer = 0;
+            transform.GetChild(6).gameObject.transform.GetChild(3).gameObject.layer = 0;
+
             transform.GetChild(6).gameObject.transform.GetChild(9).gameObject.SetActive(false);
             transform.GetChild(6).gameObject.transform.GetChild(10).gameObject.SetActive(false);
 
