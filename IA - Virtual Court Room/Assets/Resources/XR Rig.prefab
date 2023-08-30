@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1357004677709089213
 RectTransform:
   m_ObjectHideFlags: 0
@@ -273,7 +273,6 @@ GameObject:
   - component: {fileID: 1357004677751976319}
   - component: {fileID: 1357004677751976306}
   - component: {fileID: 6925131828822032747}
-  - component: {fileID: 931949129943437700}
   - component: {fileID: 3088455775071537424}
   m_Layer: 7
   m_Name: XR Rig
@@ -572,7 +571,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357004677751976318}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 790deacf74d013c47acdf73352e4fe8a, type: 3}
   m_Name: 
@@ -599,22 +598,19 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 1208303834031787220}
+  - {fileID: 3682881554054459640}
+  - {fileID: 989760328301525769}
+  - {fileID: 2245974357029382186}
+  - {fileID: 4765400090970232476}
+  - {fileID: 3991641116463929484}
+  - {fileID: 3678576204442979482}
+  - {fileID: 8628861087470571635}
+  - {fileID: 3092788069797666823}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &931949129943437700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357004677751976318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d595ec19ade36a649b5ef297e3188036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3088455775071537424
 MonoBehaviour:
   m_ObjectHideFlags: 0
