@@ -11,9 +11,12 @@ public class TextFollowsCamera : MonoBehaviour
     public SecondaryButtonWatcher watcher;
     public Material readMaterial;
 
+    private int distanceToDeactivate; 
+
     // Start is called before the first frame update
     void Start()
     {
+        distanceToDeactivate = 4;
         watcher.secondaryButtonPress.AddListener(onSecondaryButtonEvent); //Event, wenn der B oder Y Button gedrückt wird
     }
 
@@ -39,23 +42,29 @@ public class TextFollowsCamera : MonoBehaviour
             //Wenn man sich vom Text entfernt, soll er sich deaktivieren
             Vector3 distanceVector = transform.position - Camera.main.transform.position;
             float distanceToText = distanceVector.magnitude;
-            if (distanceToText > 4)
+            if (distanceToText > distanceToDeactivate)
                 textNotVisible();
         }
     }
 
     public void textVisible()
     {
-        transform.GetComponent<Canvas>().enabled = true;
-        //transform.GetComponent<TextMeshPro>().enabled = true; //Text wird sichtbar
-        transform.parent.GetComponent<MeshRenderer>().enabled = false; //Infopoint wird in der Zeit unsichtbar
-        isSelected = true; 
+        
+        Vector3 distanceVector = transform.position - Camera.main.transform.position;
+        float distanceToText = distanceVector.magnitude;
+
+        if (distanceToText <= distanceToDeactivate) //Wenn man zu weit vom Text entfernt ist, soll er nicht aktiviert werden
+        {
+            transform.GetComponent<Canvas>().enabled = true;
+            transform.parent.GetComponent<MeshRenderer>().enabled = false; //Infopoint wird in der Zeit unsichtbar
+            isSelected = true; 
+        }
+
     }
 
     public void textNotVisible()
     {
         transform.GetComponent<Canvas>().enabled = false;
-        //transform.GetComponent<TextMeshPro>().enabled = false; //Text wird unsichtbar
         transform.parent.GetComponent<MeshRenderer>().enabled = true; //Infopoint wird wieder sichtbar
         isSelected = false;
         transform.parent.GetComponent<Renderer>().material = readMaterial; //Infopoint wird als gelesen markiert    
