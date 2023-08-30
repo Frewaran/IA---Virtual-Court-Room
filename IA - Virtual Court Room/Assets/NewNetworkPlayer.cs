@@ -37,6 +37,7 @@ public class NewNetworkPlayer : MonoBehaviour {
             transform.GetChild(6).gameObject.transform.GetChild(1).gameObject.layer = 0;
             transform.GetChild(6).gameObject.transform.GetChild(2).gameObject.layer = 0;
             transform.GetChild(6).gameObject.transform.GetChild(3).gameObject.layer = 0;
+            transform.GetChild(6).gameObject.transform.GetChild(8).gameObject.layer = 0;
 
             transform.GetChild(6).gameObject.transform.GetChild(9).gameObject.SetActive(false);
             transform.GetChild(6).gameObject.transform.GetChild(10).gameObject.SetActive(false);
@@ -50,7 +51,6 @@ public class NewNetworkPlayer : MonoBehaviour {
             GetComponentInChildren<BoneRenderer>().enabled = false;
             GetComponentInChildren<AnimateHandOnInput>().enabled = false;
             GetComponentInChildren<LowerBodyAnimator>().enabled = false;
-            GetComponentInChildren<AnimationController>().enabled = false;
             GetComponentInChildren<AnimationController>().enabled = false;
         }
     }
