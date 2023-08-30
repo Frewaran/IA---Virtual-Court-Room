@@ -62,6 +62,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ClockHandleSecound
+    second: {fileID: 2100000, guid: 3873be9bbbaf44cc6a8f9832d86469ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ConsulatationRoomFloorMaterial
     second: {fileID: 2100000, guid: a021eadc11dd349c3a631946a070a55f, type: 2}
   - first:
@@ -219,6 +224,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: MASTER_CourtFloorMaterial
     second: {fileID: 2100000, guid: 687229d45f333466aa528d5f7afc8e64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MASTER_FoyerFloorMaterial
+    second: {fileID: 2100000, guid: aef6639e0ee344534853eb4b9451d63e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
