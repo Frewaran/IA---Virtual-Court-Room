@@ -14,7 +14,7 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
     
     public override void OnJoinedRoom() {
         base.OnJoinedRoom();
-        spawnedPlayerPrefab = PhotonNetwork.Instantiate("Character", transform.position, transform.rotation);
+        spawnedPlayerPrefab = PhotonNetwork.Instantiate("XR Rig", transform.position, transform.rotation);
     }
 
     /* [Multiplayer]

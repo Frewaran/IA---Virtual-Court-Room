@@ -41,7 +41,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom() {
         Debug.Log("Joined a room.");
 
-        GameObject character = PhotonNetwork.Instantiate("Character", Vector3.zero, Quaternion.identity);
+        // GameObject character = PhotonNetwork.Instantiate("Character", Vector3.zero, Quaternion.identity);
     }
 
     /* [Multiplayer]
