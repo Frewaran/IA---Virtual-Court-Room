@@ -74,30 +74,30 @@ public class NetworkPlayer : MonoBehaviour {
         XROrigin rig = FindObjectOfType<XROrigin>();
 
         // Hier werden die jeweiligen Transforms für alle Spieler gefunden
-        armatureRig = rig.transform.Find("RPM_Player_J/Armature");
-        hipsRig = rig.transform.Find("RPM_Player_J/Armature/Hips");
-        spineRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine");
-        spine1Rig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1");
-        spine2Rig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2");
-        neckRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/Neck");
-        headRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/Neck/Head");
-        headtopRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/Neck/Head/HeadTop_End");
-        lefteyeRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/Neck/Head/LeftEye");
-        righteyeRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/Neck/Head/RightEye");
-        leftshoulderRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/LeftShoulder");
-        leftarmRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/LeftShoulder/LeftArm");
-        leftforarmRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/LeftShoulder/LeftArm/LeftForeArm");
-        lefthandRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand");
-        rightshoulderRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/RightShoulder");
-        rightarmRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/RightShoulder/RightArm");
-        rightforarmRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/RightShoulder/RightArm/RightForeArm");
-        righthandRig = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine2/RightShoulder/RightArm/RightForeArm/RightHand");
-        leftuplegRig = rig.transform.Find("RPM_Player_J/Armature/Hips/LeftUpLeg");
-        leftlegRig = rig.transform.Find("RPM_Player_J/Armature/Hips/LeftUpLeg/LeftLeg");
-        leftfootRig = rig.transform.Find("RPM_Player_J/Armature/Hips/LeftUpLeg/LeftLeg/LeftFoot");
-        rightuplegRig = rig.transform.Find("RPM_Player_J/Armature/Hips/RightUpLeg");
-        rightlegRig = rig.transform.Find("RPM_Player_J/Armature/Hips/RightUpLeg/RightLeg");
-        rightfootRig = rig.transform.Find("RPM_Player_J/Armature/Hips/RightUpLeg/RightLeg/RightFoot");
+        armatureRig             = rig.transform.Find("RPM_Player_J/Armature");
+        hipsRig                 = rig.transform.Find("RPM_Player_J/Armature/Hips");
+        spineRig                = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine");
+        spine1Rig               = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1");
+        spine2Rig               = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2");
+        neckRig                 = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/Neck");
+        headRig                 = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/Neck/Head");
+        headtopRig              = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/Neck/Head/HeadTop_End");
+        lefteyeRig              = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye");
+        righteyeRig             = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye");
+        leftshoulderRig         = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/LeftShoulder");
+        leftarmRig              = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm");
+        leftforarmRig           = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm");
+        lefthandRig             = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand");
+        rightshoulderRig        = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/RightShoulder");
+        rightarmRig             = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm");
+        rightforarmRig          = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm");
+        righthandRig            = rig.transform.Find("RPM_Player_J/Armature/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand");
+        leftuplegRig            = rig.transform.Find("RPM_Player_J/Armature/Hips/LeftUpLeg");
+        leftlegRig              = rig.transform.Find("RPM_Player_J/Armature/Hips/LeftUpLeg/LeftLeg");
+        leftfootRig             = rig.transform.Find("RPM_Player_J/Armature/Hips/LeftUpLeg/LeftLeg/LeftFoot");
+        rightuplegRig           = rig.transform.Find("RPM_Player_J/Armature/Hips/RightUpLeg");
+        rightlegRig             = rig.transform.Find("RPM_Player_J/Armature/Hips/RightUpLeg/RightLeg");
+        rightfootRig            = rig.transform.Find("RPM_Player_J/Armature/Hips/RightUpLeg/RightLeg/RightFoot");
 
         /* [Multplayer]
          * Für einen selber werden die Komponenten ausgeblendet. Man selbst steuert nämlich nicht das hier erschaffene Rig, sondern
