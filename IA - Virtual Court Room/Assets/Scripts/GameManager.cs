@@ -43,15 +43,15 @@ public class GameManager : MonoBehaviourPunCallbacks
         lobbyPanel.SetActive(true);
     }
 
+    //Zum Verlassen des Multiplayer-Bereiches im Hauptmenü.
     public void OnClickMainMenu() {
         PhotonNetwork.LeaveLobby();
         PhotonNetwork.Disconnect();
     }
-    public override void OnDisconnected(DisconnectCause cause) {
-        Debug.Log("Disconnected");
-    }
 
+    //Wenn auf den Quit-Button gedrückt wird, wird die Anwendung geschlossen.
     public void QuitApplication() {
         Application.Quit();
     }
 }
+//Mert Kara

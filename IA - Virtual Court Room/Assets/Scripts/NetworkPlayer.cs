@@ -69,3 +69,4 @@ public class NetworkPlayer : MonoBehaviour {
         target.rotation = rigTransform.rotation;
     }
 }
+//Mert Kara

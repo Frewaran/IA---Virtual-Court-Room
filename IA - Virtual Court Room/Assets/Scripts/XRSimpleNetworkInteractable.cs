@@ -28,3 +28,4 @@ public class XRSimpleNetworkInteractable : XRSimpleInteractable {
         photonView.RequestOwnership();
     }
 }
+//Mert Kara

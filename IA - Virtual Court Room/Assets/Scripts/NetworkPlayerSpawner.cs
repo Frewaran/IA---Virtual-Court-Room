@@ -23,3 +23,4 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
         PhotonNetwork.Destroy(spawnedPlayerPrefab);
     }   
 }
+//Mert Kara
