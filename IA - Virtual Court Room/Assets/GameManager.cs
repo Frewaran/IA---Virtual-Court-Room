@@ -5,7 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
 
-public class LobbyManager : MonoBehaviourPunCallbacks
+public class GameManager : MonoBehaviourPunCallbacks
 {
     public GameObject lobbyPanel;
     public GameObject roomPanel;
@@ -49,5 +49,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
     public override void OnDisconnected(DisconnectCause cause) {
         Debug.Log("Disconnected");
+    }
+
+    public void QuitApplication() {
+        Application.Quit();
     }
 }
