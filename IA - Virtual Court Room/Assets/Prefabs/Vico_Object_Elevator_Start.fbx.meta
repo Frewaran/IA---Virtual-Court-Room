@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: b991e23077baf4c489b377a0fe12ea3e
+guid: 37aa6952d197b43c1a489378570ef6f9
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Elevator_Material
-    second: {fileID: 2100000, guid: f3fc7df77d1f54cdd8311a8b45ef9fbf, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

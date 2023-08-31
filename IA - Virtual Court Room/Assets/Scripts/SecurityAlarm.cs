@@ -29,8 +29,8 @@ public class SecurityAlarm : MonoBehaviourPun
         /* [MULTIPLAYER]
          * Man nutzt nicht mehr einfach SetAlarm(); zum Ausführen des Befehls, sondern nutzt von der photonView-Komponente .RPC und wählt .All als Target, damit es für alle gilt.
          */
-        //photonView.RPC("SetAlarm", RpcTarget.All, isSelected);
-        SetAlarm();
+        photonView.RPC("SetAlarm", RpcTarget.All, isSelected);
+        //SetAlarm();
     }
 
     /* [MULTIPLAYER]
@@ -52,3 +52,4 @@ public class SecurityAlarm : MonoBehaviourPun
         }
     }
 }
+//Julius Jürgens + Mert Kara
