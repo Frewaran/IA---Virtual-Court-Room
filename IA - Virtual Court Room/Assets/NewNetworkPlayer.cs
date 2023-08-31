@@ -42,9 +42,6 @@ public class NewNetworkPlayer : MonoBehaviour {
             transform.GetChild(6).gameObject.transform.GetChild(9).gameObject.SetActive(false);
             transform.GetChild(6).gameObject.transform.GetChild(10).gameObject.SetActive(false);
 
-            GetComponentInChildren<AvatarData>().AvatarId = "64c9378c365cf80d16974e55";
-            GetComponentInChildren<AvatarData>().enabled = false;
-            GetComponentInChildren<AvatarData>().enabled = false;
             GetComponentInChildren<EyeAnimationHandler>().enabled = false;
             GetComponentInChildren<AvatarController>().enabled = false;
             GetComponentInChildren<RigBuilder>().enabled = false;

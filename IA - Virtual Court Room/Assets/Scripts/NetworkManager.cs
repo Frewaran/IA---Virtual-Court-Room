@@ -23,15 +23,14 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log("Connected to Master.");
 
         /* [Multiplayer]
-         * Das ist eine spezielle Funktion von Photon. Wenn man zum Master verbunden ist, also wenn OnButtonClicked() funktioniert hat, dann wird diese Funktion automatisch ausgeführt.
-         * Dann wird hier geguckt, ob man etwas im RPM-Inputfield drin stehen hat.
+         * Das ist eine spezielle Funktion von Photon. Wenn man zum Master verbunden ist, dann wird diese Funktion automatisch ausgeführt.
          * Wenn, dann werden hier ein paar Einstellungen getroffen und am Ende wird man mit einem Raum verbunden oder erstellt diesen zuerst, wenn es ihn noch nicht gibt.
          */
          RoomOptions roomOptions = new RoomOptions();
          roomOptions.MaxPlayers = 10;
          roomOptions.IsVisible = true;
          roomOptions.IsOpen = true;
-            PhotonNetwork.JoinOrCreateRoom("Ready Player Me", roomOptions, TypedLobby.Default);
+         PhotonNetwork.JoinOrCreateRoom("Ready Player Me", roomOptions, TypedLobby.Default);
     }
 
     /* [Multiplayer]
@@ -40,8 +39,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
      */
     public override void OnJoinedRoom() {
         Debug.Log("Joined a room.");
-
-        // GameObject character = PhotonNetwork.Instantiate("Character", Vector3.zero, Quaternion.identity);
     }
 
     /* [Multiplayer]
