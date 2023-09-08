@@ -25,7 +25,7 @@ public class Clock : MonoBehaviour
         minute = System.DateTime.Now.Minute;
         second = System.DateTime.Now.Second;
 
-        float hourRotation = (hour % 12) * 30f; // 30 Grad pro Stunde
+        float hourRotation = (hour % 12) * 30f + (minute / 12f) * 6f; //Alle 12 Minuten 6 Grad
         float minuteRotation = minute * 6f; //6 Grad pro Minute
         float secondRotation = second * 6f; //6 Grad pro Sekunde
 
