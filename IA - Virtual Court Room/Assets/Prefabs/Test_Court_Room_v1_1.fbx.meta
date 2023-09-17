@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: e68287dfeb1e545f99a93fe7f1813635
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects:
   - first:
@@ -127,6 +127,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Court_Wall_Foyer_Material
+    second: {fileID: 2100000, guid: 2c4a25f7b591e41948e8873bbcfd08cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Court_Wall_Material
     second: {fileID: 2100000, guid: d1d472fd6645848dfb66f723deb93231, type: 2}
   - first:
@@ -134,6 +139,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Court_Wall_Material.001
     second: {fileID: 2100000, guid: 3c3ccaeec849242088350f211decc552, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Court_Wall_back__Material
+    second: {fileID: 2100000, guid: 85c246cd42e5f4b23a4a47b874be5cb9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -411,8 +421,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -435,6 +443,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -462,6 +471,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -494,6 +504,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
